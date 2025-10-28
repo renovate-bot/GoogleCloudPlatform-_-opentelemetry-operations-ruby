@@ -59,7 +59,7 @@ jobs:
     - name: Install NodeJS 16.x
       uses: actions/setup-node@v3
       with:
-        node-version: "16.x"
+        node-version: "16.x || 24.x"
     - name: Install tools
       run: "gem install --no-document toys && npm install linkinator"
     - name: Test ${{ matrix.task }}
